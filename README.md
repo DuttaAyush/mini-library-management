@@ -14,7 +14,7 @@ A simple full-stack library management application to manage books and students.
 
 - **Frontend**: React, React Router, Vite
 - **Backend**: Node.js, Express.js
-- **Database**: MySQL/SQL
+- **Database**: MongoDB
 
 ## Quick Start
 
@@ -39,7 +39,7 @@ Frontend runs on http://localhost:5173
 ```
 ├── Backend/           # Node.js API server
 │   ├── controllers/   # Request handlers
-│   ├── models/        # Database models
+│   ├── models/        # MongoDB models
 │   ├── routes/        # API routes
 │   └── services/      # Business logic
 └── Frontend/          # React application
@@ -50,9 +50,10 @@ Frontend runs on http://localhost:5173
 
 ## Usage
 
-1. Start both backend and frontend servers
-2. Navigate to the frontend URL
-3. Use the navigation bar to:
+1. Make sure MongoDB is running
+2. Start both backend and frontend servers
+3. Navigate to the frontend URL
+4. Use the navigation bar to:
    - Add books to the library
    - Register new students
    - Issue books to students
