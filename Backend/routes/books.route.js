@@ -5,7 +5,7 @@ const bookController=require("../controller/books.controller")
 router.post('/addnew',bookController.addBook)
 router.get('/getavailable',bookController.getAvailableBooks)
 router.post('/issuebook',bookController.issueBook)
-router.get('/return',bookController.returnBook)
+router.post('/return',bookController.returnBook)
 
 
 module.exports=router

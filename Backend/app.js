@@ -1,5 +1,6 @@
 const dotenv = require('dotenv');
 dotenv.config();
+const cors = require('cors');
 const express=require('express')
 const connectDB = require('./db')
 const studentRoutes=require('./routes/student.route')
@@ -9,6 +10,7 @@ const app=express()
 
 connectDB()
 app.use(express.json())
+app.use(cors());
 
 app.listen(3030,()=>{
     console.log("Server running on 3030")

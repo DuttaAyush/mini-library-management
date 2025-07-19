@@ -30,7 +30,7 @@ module.exports.getAvailableBooks = async (req, res, next) => {
     try {
         const availBooks = await bookService.getAvailableBooks()
         // console.log(availBooks)
-        res.status(200).json({ books: availBooks, message: "Available Books fetched successfully.." })
+        return res.status(200).json({ books: availBooks, message: "Available Books fetched successfully.." })
     } catch (err) {
         next(err)
     }

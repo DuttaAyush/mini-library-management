@@ -3,7 +3,7 @@ const studentController = require('../controller/student.controller')
 const router=express.Router()
 
 
-router.post("/add",studentController.addStudent)
+router.post("/register",studentController.addStudent)
 
 
 
